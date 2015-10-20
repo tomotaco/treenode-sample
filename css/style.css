@@ -1,0 +1,23 @@
+.node {
+	wigth: 100%;
+	height: 30px; 
+}
+
+.indent {
+	float: left;
+	width: 20px;
+	height: 30px; 
+}
+
+.addchild {
+	margin-left: 5px;
+}
+
+#navPages a,
+#navPages span,
+#sort a,
+#sort span {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
