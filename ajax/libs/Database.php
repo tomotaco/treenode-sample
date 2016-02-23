@@ -72,6 +72,8 @@ class Database
 		$statement->free();
 		$result->free();
 
+		if ($this->debug) echo "Result: succeeded.\n";
+
 		return true;
 	}
 
@@ -85,6 +87,8 @@ class Database
 			if ($this->debug) echo "Error result: " . $result->getMessage() . "\n";
 			return false;
 		}
+
+		if ($this->debug) echo "result: " . print_r($result, true) . "<br />\n";
 
 		return $result;
 	}
@@ -113,6 +117,8 @@ class Database
 		$statement->free();
 		$query->free();
 	
+		if ($this->debug) echo "result rows: " . print_r($rows, true) . "<br />\n";
+
 		return $rows;
 	}
 
@@ -141,6 +147,8 @@ class Database
 		$statement->free();
 		$query->free();
 
+		if ($this->debug) echo "result rows: " . print_r($rows, true) . "<br />\n";
+
 		return $rows;
 	}
 
@@ -158,6 +166,8 @@ class Database
 			if ($this->debug) echo "Error result : " . $result->getMessage() . "\n";
 			return false;
 		}
+
+		if ($this->debug) echo "result: " . print_r($result, true) . "<br />\n";
 
 		return $result;
 	}
